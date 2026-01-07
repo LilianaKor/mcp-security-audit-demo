@@ -1,5 +1,5 @@
 # mcp-security-audit-demo
-This project demonstrates a practical security audit of Model Context Protocol (MCP) usage in a local development environment.  The goal is to identify whether any MCP servers are present, understand where they are configured, and assess potential security risks — especially in environments using AI-assisted development tools.
+This project demonstrates a practical security audit of Model Context Protocol (MCP) usage in a local development environment.  The goal is to identify whether any MCP servers are present, understand where they are configured, and assess potential security risks — especially in environments using AI-assisted development tools. 
 # MCP Security Audit – Local Environment Demo
 
 ## Overview
@@ -74,7 +74,7 @@ Zed
 
 Project-level MCP configs
 
-### Result:
+## Result:
 No unintended or background MCP configurations were found.
 
 This confirms that the local environment only contains MCPs that were intentionally enabled for controlled use cases (e.g., Playwright demo automation).
@@ -105,10 +105,9 @@ MCP Audit Tool
 
 ---
 
-###  `notes/findings.md` 
-```md
+## notes/findings.md 
 
-### Findings Summary
+## Findings Summary
 
 - No hidden MCP servers detected
 - All MCP usage was intentional and scoped
@@ -121,6 +120,8 @@ MCP Audit Tool
 - Playwright-based MCP usage did not expose system-level risks
 - MCP Audit is effective for awareness and early detection, not runtime enforcement
 
-I intentionally used MCP for Playwright demo automation and then ran an MCP security audit to ensure there were no unintended or background MCP servers in my environment. This helped validate secure and transparent MCP usage
+# I intentionally used MCP for Playwright demo automation and then ran an MCP security audit 
+to ensure there were no unintended or background MCP servers in my environment. 
+This helped validate secure and transparent MCP usage
 
 
