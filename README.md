@@ -44,19 +44,20 @@ This project focuses on answering those questions through hands-on auditing.
 ```bash
 python3 -m venv venv
 source venv/bin/activate
+```
 2. Install MCP Audit locally
-bash
-Copy code
+```
 pip install -e .
+```
 3. Run MCP scan
-bash
-Copy code
-mcp-audit scan
+```
+mcp-audit scan ```
+
 Optional verbose scan:
 
-bash
-Copy code
+```
 mcp-audit scan --verbose
+```
 Results
 The scan checked the following locations:
 
