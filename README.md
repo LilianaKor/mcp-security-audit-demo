@@ -120,8 +120,8 @@ MCP Audit Tool
 - Playwright-based MCP usage did not expose system-level risks
 - MCP Audit is effective for awareness and early detection, not runtime enforcement
 
-# I intentionally used MCP for Playwright demo automation and then ran an MCP security audit 
-to ensure there were no unintended or background MCP servers in my environment. 
+### I intentionally used MCP for Playwright demo automation 
+and then ran an MCP security audit to ensure there were no unintended or background MCP servers in my environment. 
 This helped validate secure and transparent MCP usage
 
 
