@@ -41,7 +41,7 @@ This project focuses on answering those questions through hands-on auditing.
 
 ### 1. Create and activate a virtual environment
 
-```bash
+```
 python3 -m venv venv
 source venv/bin/activate
 ```
@@ -51,14 +51,15 @@ pip install -e .
 ```
 3. Run MCP scan
 ```
-mcp-audit scan ```
+mcp-audit scan
+```
 
 Optional verbose scan:
 
 ```
 mcp-audit scan --verbose
 ```
-Results
+## Results
 The scan checked the following locations:
 
 Claude Desktop configuration
@@ -73,8 +74,53 @@ Zed
 
 Project-level MCP configs
 
-Result:
+### Result:
 No unintended or background MCP configurations were found.
 
 This confirms that the local environment only contains MCPs that were intentionally enabled for controlled use cases (e.g., Playwright demo automation).
+
+## Key Takeaways
+
+MCP Audit helps detect hidden or unintended MCP servers
+
+Not all MCP usage is a security risk — context and intent matter
+
+Running local audits is a simple but powerful security hygiene practice
+
+MCP security should be part of developer and QA awareness, not just security teams
+
+## Next Steps
+
+Test against a demo repository with known MCP configurations
+
+Integrate MCP audit checks into CI pipelines
+
+Expand audits to team-wide environments
+
+## References
+
+MCP Security Fundamentals
+
+MCP Audit Tool
+
+---
+
+###  `notes/findings.md` 
+```md
+
+### Findings Summary
+
+- No hidden MCP servers detected
+- All MCP usage was intentional and scoped
+- Playwright-based MCP usage did not expose system-level risks
+- MCP Audit is effective for awareness and early detection, not runtime enforcement
+
+## My Achievements:
+- No hidden MCP servers detected
+- All MCP usage was intentional and scoped
+- Playwright-based MCP usage did not expose system-level risks
+- MCP Audit is effective for awareness and early detection, not runtime enforcement
+
+I intentionally used MCP for Playwright demo automation and then ran an MCP security audit to ensure there were no unintended or background MCP servers in my environment. This helped validate secure and transparent MCP usage
+
 
